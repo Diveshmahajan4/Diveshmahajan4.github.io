@@ -78,6 +78,7 @@ h6:lang(ta),
 body {
     overflow-y: scroll;
     position: relative;
+    z-index: -1;
 }
 
 .loader-wrapper {
@@ -221,8 +222,8 @@ a:hover {
     --black: #1D1D1D;
     --black-light: #1d1d1d;
     --white: #fff;
-    --grey: #515152;
-    --light-grey: #636363;
+    --light-grey: #393E46;
+    --grey: #636363;
     --primary: #09FDD9;
     --secondary: #FE0A54;
 }
@@ -319,6 +320,7 @@ nav {
     font-size: 1.5rem !important;
 }
 
+
 span.title {
     opacity: 0.05;
     color: #888;
@@ -395,6 +397,14 @@ span.proj {
     background-color: #1f1f1f;
     padding: 2em 2em !important;
     border-left: solid 5px var(--secondary);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.box:hover{
+    box-shadow: 6px 3px 51px 3px rgba(9,253,217,0.72);
+-webkit-box-shadow: 6px 3px 51px 3px rgba(9,253,217,0.72);
+-moz-box-shadow: 6px 3px 51px 3px rgba(9,253,217,0.72);
+transition: .5s ease-in-out;
 }
 
 .scaler-blogs .box {
@@ -522,13 +532,19 @@ button {
 }
 
 #intro h2 {
-    color: var(--grey);
-    font-size: 1.2rem;
-    font-weight: 400;
+    color: var(--secondary);
+    font-size: 1.5rem;
+    font-weight: 500;
     letter-spacing: 1.5px;
     font-family: 'Heebo', sans-serif;
     line-height: 2;
     margin-top: 20px !important;
+    width: 40%;
+    transition: .5 ease-in-out;
+}
+
+#intro h2:hover{
+    color: var(--primary);
 }
 
 #about h4,
@@ -662,7 +678,7 @@ form {
     margin-left: 5px !important;
 }
 
-.blog {
+.blog{
     margin-right: 30px;
     border-radius: 7px;
     transition: box-shadow 0.5s ease-in-out;
