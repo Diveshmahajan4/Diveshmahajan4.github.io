@@ -358,7 +358,7 @@ span.proj {
 }
 
 #about .title {
-    top: 87% !important;
+    top: 130% !important;
 }
 
 #skills .title {
@@ -374,7 +374,7 @@ span.proj {
 }
 
 #blogs .title {
-    top: 50% !important;
+    top: 80% !important;
 }
 
 #skills{
@@ -413,6 +413,12 @@ transition: .5s ease-in-out;
     margin-bottom: 20px;
 }
 
+.project-details .box {
+    border-radius: 0;
+    border-left: solid 5px var(--secondary);
+    margin-bottom: 20px;
+}
+
 .no-border {
     border: none;
 }
@@ -427,7 +433,14 @@ transition: .5s ease-in-out;
     font-family: 'Poppins', sans-serif;
 }
 
+#home{
+    position: relative;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
 #about,
+#projects,
 #skills,
 #contact,
 #blogs {
@@ -616,6 +629,10 @@ button {
     transform: translateX(-5px);
 }
 
+.about h4{
+    line-height: 40px;
+}
+
 .skill span {
     float: right;
 }
@@ -699,11 +716,11 @@ form {
 }
 
 /* Projects */
-#about.projects div{
-    margin-right: 20px;
+#projects div{
+    margin-right: 30px;
 }
 
-.projects{
+.project-details div{
     padding: 20px;
 }
 
@@ -850,6 +867,7 @@ form {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
+
     .home {
         position: absolute;
         top: 43%;
